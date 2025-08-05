@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './chat.module.css';
 import { CONSTANTS } from '../../common/constants';
 
 type ChatInputProps = {

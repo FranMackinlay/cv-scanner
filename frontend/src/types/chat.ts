@@ -3,9 +3,9 @@ export type ChatMessage = {
   content: string;
 };
 
-
 export type ChatWindowProps = {
   chatHistory: ChatMessage[];
   newMessageIndex: number | null;
   chatEndRef: React.RefObject<HTMLDivElement | null>;
+  loading: boolean;
 };

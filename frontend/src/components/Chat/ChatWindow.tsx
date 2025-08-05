@@ -1,14 +1,6 @@
 import React from 'react';
-import { ChatMessage } from '../../types/chat';
 import TypingIndicator from './TypingIndicator';
-import styles from './chat.module.css';
-
-type ChatWindowProps = {
-  chatHistory: ChatMessage[];
-  newMessageIndex: number | null;
-  chatEndRef: React.RefObject<HTMLDivElement | null>;
-  loading: boolean; // Add loading prop
-};
+import { ChatWindowProps } from '../../types/chat';
 
 const ChatWindow: React.FC<ChatWindowProps> = ({ chatHistory, newMessageIndex, chatEndRef, loading }) => {
   return (
