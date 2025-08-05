@@ -13,8 +13,8 @@ This is a full-stack application that:
 
 ```
 /backend      → NestJS API to query LLM and serve results
+  /scripts      → Standalone Node.js script to generate PDF CVs
 /frontend     → React app with chat interface
-/scripts      → Standalone Node.js script to generate PDF CVs
 ```
 
 ---
@@ -40,13 +40,11 @@ cd ai-cv-generator
 
 ### 2. Set Up `.env` File
 
-Create a `.env` file at the project root or inside `/scripts` and `/backend` with:
+Create a `.env` file at the project root at `/backend` with:
 
 ```
-OPENROUTER_API_KEY=your_openrouter_api_key_here
+Check each .ENV.EXAMPLE for each project
 ```
-
-> 🔐 Get your free API key from https://openrouter.ai
 
 ---
 
@@ -91,7 +89,7 @@ npm run dev
 
 ```bash
 cd ../backend
-npm install
+npm install (probably using --legacy-peer-deps)
 npm run start:dev
 ```
 
