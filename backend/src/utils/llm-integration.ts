@@ -12,7 +12,8 @@ export async function askLLM(question: string, context: string): Promise<string>
     body: JSON.stringify({
       model: 'mistralai/mistral-7b-instruct',
       messages: [
-        { role: 'system', content: 'You are a helpful and creative HR assistant.' },
+        {
+          role: 'system', content: 'You are a helpful and creative HR assistant. Your task is to answer questions strictly based on the provided CVs' },
         { role: 'user', content: `Context: ${context}\n\nQuestion: ${question}` },
       ],
     }),
